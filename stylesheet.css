@@ -1,0 +1,153 @@
+/*
+    Narrow Down Decision Maker Style Sheet
+    v1.0 | 4/20/2020
+*/
+
+/* body */
+
+body{
+    font-family: Arial;
+    box-sizing: border-box;
+    background-color: #d1d1d9;
+}
+
+/* header */
+
+header{
+    border-bottom: 1px solid #000;
+    background-color: #b8b8c7;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.3),
+                0px 3px 4px rgba(0,0,0,0.6);
+}
+
+header h1{
+    padding: 1em;
+    padding-bottom: 0.5em;
+    font-size: 2em;
+}
+
+header p{
+    padding: 1em;
+    padding-top: 0;
+    padding-left: 3em;
+}
+
+/* main content */
+
+main{
+    margin-top: 3em;
+}
+
+.choices-in{
+    text-align: center;
+}
+
+.choices-in h2, .decisionmaker h2, .decision h2{
+    font-size: 1.5em;
+}
+
+.choice-input, .choices-in button, .resultButton{
+    text-align: center;
+    margin: 5px auto;
+}
+
+.choice-input{
+    display: block;
+    transition: 0.3s;
+    background-color: #eee;
+    font-size: 2em;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.choices-in input:focus{
+    background-color: #ddd;
+   /* border-bottom: 1px solid #000;*/
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3),
+                1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.choices-in button, .choiceButton, .resultButton{
+    border: none;
+    font-size: 1.5em;
+    background-color: #359;
+    color: #fff;
+    border-radius: 3px;
+    margin: 12px 3px;
+    padding: 0.3em 0.5em;
+}
+
+.choiceButton{
+    font-size: 4em;
+    margin: 1em 0.5em;
+}
+
+#decision-text{
+    font-size: 4em;
+    margin: 1em;
+}
+
+.choices-in button:hover, .choices-in button:active, .choiceButton:hover, .choiceButton:active, .resultButton:hover, .resultButton:active{
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3),
+                1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.decisionmaker{
+    display: none;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.decision{
+    display: none;
+    text-align: center;
+}
+
+/* responsive styling */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1200px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+
+    header h1{
+        padding: 0.5em;
+        margin-left: 1em;
+        font-size: 1.3em;
+    }
+
+    header p{
+        display: none;
+    }
+
+    /* main content */
+
+    main{
+        margin-top: 1.5em;
+    }
+    
+    .choice-input, .choices-in button, .resultButton{
+        margin: 5px auto;
+        width: 50%;
+    }
+
+    .choices-in button, .resultButton{
+        margin: 5px 3px;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    .choice-input, .choices-in button, .resultButton{
+        width: 90%;
+    }
+}

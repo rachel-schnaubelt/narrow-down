@@ -1,0 +1,57 @@
+<!doctype html>
+<!-- 
+    Narrow Down Decision Maker
+    V1.0 | 04/20/2020
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Narrow Down</title>
+        <link href="reset.css" rel="stylesheet">
+        <link href="stylesheet.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <h1>Narrow Down Decision Helper</h1>
+            <p>Having trouble making a decision? Enter your options and make only one decision at a time.</p>
+        </header>
+        
+        <main>
+            <!-- input div -->
+            <div class="choices-in" id="choices-in">
+                <h2>Enter Options:</h2>
+                
+                <div class="options" id="options">
+                    <input type="text" class="choice-input">
+                    <input type="text" class="choice-input">
+                    <input type="text" class="choice-input">
+                    <input type="text" class="choice-input">
+                </div>
+                
+                <button id="addOptionButton">Add Another Option</button>
+                <button id="makeDecisionButton">Make A Decision</button>
+                <button id="decideForMeButton">Decide For Me</button>
+            </div>
+
+            <!-- decision div -->
+            <div class="decisionmaker" id="decisionmaker">
+                <h2>Make a Choice</h2>
+                
+                <button id="choice1" class="choiceButton"></button>
+                <button id="choice2" class="choiceButton"></button>
+            </div>
+
+            <!-- result div -->
+            <div class="decision" id="decision">
+                <h2>Your Decision:</h2>
+                <h2 id="decision-text"></h2>
+                
+                <button class="resultButton" id="newDecision">Make Another Decision</button>
+                <button class="resultButton" id="restart">I Don't Like This Choice. Let's Try Again.</button>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
